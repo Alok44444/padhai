@@ -1,0 +1,56 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("#Alok1").click(function(){
+ 
+    $("#Alok2").slideToggle("slow");
+    // $("this").attr(desable, true);
+    //$("this").attr(desable, false);
+    $("#Alok3").click(function(){
+        $("#Alok2").slideToggle("slow");
+        
+  });
+});
+});
+</script>
+<style> 
+#Alok1 {
+  padding: 15px;
+  text-align: center;
+  background-color: orange;
+  border: solid 1px #c3c3c3;
+  font-size: 20px;
+}
+
+#Alok2 {
+  padding: 50px;
+  display: none;
+ /* // background-image: url(download.png ); */
+  font-size: 50px;
+}
+
+#Alok3 {
+  padding: 20px;
+  text-align: center;
+  background-color: green;
+  border: solid 1px #c3c3c3;
+  font-size: 20px;
+}
+</style>
+</head>
+<body>
+ <b>
+<div id="Alok1">Down</div>
+</b>
+
+<b>
+<div id="Alok2" align="center" ><img src="download.png" height="100px" width="100px" ></div>
+</b>
+
+<b>
+<div id="Alok3">Up</div>
+</b>
+</body>
+</html>

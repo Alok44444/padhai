@@ -13,15 +13,28 @@
 </style>
 <script>
 $(document).ready(function(){
-  $("button").click(function(){
-    $("button").hide(function(){
-    $("#div1").fadeIn();
-    $("#div2").fadeIn("slow");
-    $("#div3").fadeIn(3000);
-  });
-});
-});
+  $(document).ready(function(){
+   $("button").click(function(){
+   $("#Alok1").show(function(){
+    $("#div1").fadeToggle();
+    $("#div2").fadeToggle("slow");
+    $("#div3").fadeToggle(300);
+    $("#Alok1").css("background-color","red");
+    $(this).attr("disabled",true);
+     $("#Alok1").attr("disabled",false);
 
+   $("Alok").hide(function(){
+      $("#div1").fadeToggle();
+    $("#div2").fadeToggle("slow");
+    $("#div3").fadeToggle(300);
+    $("#Alok").css("background-color","yellow");
+    $(this).attr("disabled",true);
+     $("#Alok").attr("disabled",false);
+});
+});
+}); 
+});
+});
 
 
 </script>
@@ -30,13 +43,15 @@ $(document).ready(function(){
 
 <p>Demonstrate fadeIn() with different parameters.</p>
 
-<button>Show</button><br><br>
-<div id="alok">
+<div id="Alok1"><button>Show</button></div><br><br>
+<div id="alok"> </div>
 
 <!-- <button>Show</button><br><br> -->
-<div id="div1" style="width:180px;height:180px;display:none;background-color:red;"><img src="download.jpg" height="180px" width="180px"></div><br>
-<div id="div2" style="width:280px;height:280px;display:none;background-color:green;"> <img src="image.jpg" height="280px" width="280px"></div><br>
-<div id="div3" style="width:180px;height:180px;display:none;background-color:blue;"> <img src="padhai.jpg" height="180px" width="180px"></div>
-</div>
+<div id="div1" style="width:220px;height:220px;display:none;background-color:red;"><img src="padhai.png" height="180px" width="180px"></div><br><br>
+<div id="div2" style="width:220px;height:220px;display:none;background-color:green;"> <img src="padhai.jpg" height="180px" width="180px"></div><br>
+<div id="div3" style="width:220px;height:220px;display:none;background-color:blue;"> <img src="image.jpg" height="180px" width="180px"></div>
+
+<br><br>
+<div id="Alok"><button>Hide</button></div>
 </body>
 </html>
